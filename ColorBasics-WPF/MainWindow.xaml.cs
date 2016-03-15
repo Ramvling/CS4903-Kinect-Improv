@@ -40,11 +40,17 @@ namespace Microsoft.Samples.Kinect.ColorBasics
         /// </summary>
         private string statusText = null;
 
+        private NetworkManager network = new NetworkManager();
+
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
         /// </summary>
         public MainWindow()
         {
+            //network junk
+            network.init();
+            //probably blocks entire application but whatever
+
             // get the kinectSensor object
             this.kinectSensor = KinectSensor.GetDefault();
 
