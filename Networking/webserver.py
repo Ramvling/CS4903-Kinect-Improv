@@ -6,6 +6,7 @@ from os import curdir, sep
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # This is a simple server and is not very safe in its current form.
+# why aren't you doing anything?
 class MyHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
