@@ -6,10 +6,18 @@ import httplib
 
 #Listen for c# connection. This should probably be on a seperate thread
 HOST = '127.0.0.1'
-PORT = 8000
+CPORT = 8000
+WEBPORT = 8085
 
-#testing SockJS connections
-"""print"listening for websocket"
+def setupMessages():
+    m1 = createMsgStruct(1, False)
+    m1.addString()
+
+    i1 = createMsgStruct(1, True)
+    i1.addChars(2)
+
+#testing PyWebPlug connections
+print("listening for websocket connection on 8085")
 ws = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ws.bind( (HOST, 8085) )
 ws.listen(1)
@@ -21,7 +29,6 @@ while True:
         print (data)
         wait = input("enter a string:")
         conn.sendall(wait)"""
-
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.bind( (HOST, PORT) )
