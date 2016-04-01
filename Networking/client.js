@@ -1,33 +1,37 @@
 var BUTTON_PRESS = 0;
 
 $(document).ready(function() { 
-	console.log('bloop');
 	setInterval(mainLoop, 15);
 });
 
 
 //TODO
 function setupMessages() {
-    // Incoming MSG_LOGIN
-    var m1 = createMsgStruct(BUTTON_PRESS, false);
-    // This packet will be carrying two chars
-    m1.addChars(2);
+    //Incoming
+    var testIn = createMsgStruct(BUTTON_PRESS, false);
+    testIn.addString();
 
-    // Outgoing MSG_LOGIN
-    var i1 = createMsgStruct(BUTTON_PRESS, true);
-    // This packet sends a string (our name) to the server
-    i1.addString();
+    // Outgoing 
+    var testOut = createMsgStruct(BUTTON_PRESS, true);
+    testOut.addString();
+}
+
+function sendMsg() {
+    var packet = newPacket(BUTTON_PRESS);
+    packet.write($("#msg").val());
+    packet.send();
+    $("#notify").text("Sent msg");
 }
 
 function init() {
+        setupMessages();
 	// This will be called when the connection is successful
-    var onopen = function() {
-        // We ask for a new packet for type MSG_LOGIN
+    	var onopen = function() {
+        console.log("bloop");
         var packet = newPacket(BUTTON_PRESS);
-        // Writing our name. 'Write' is currently expecting a String,
-        // as that is what we defined earlier.
         packet.write(("This is a test"));
         // and then we send the packet!
+        console.log("This is a test");
         packet.send();
         $("#notify").text("Connected!");
     }
@@ -37,8 +41,10 @@ function init() {
         window.location.href = '/';
     }
 
+    console.log("connection started")
     // Start the connection!
-    wsconnect("ws://localhost:8885", onopen, onclose);
+    wsconnect("ws://128.61.105.215:8886", onopen, onclose);
+    console.log("why");
 };
 
 // This function handles incoming packets
@@ -56,10 +62,10 @@ function handleNetwork() {
     msgID = packet.msgID;
 
     // And handle it!
-    if (msgID === MSG_LOGIN) {
-        var pid = packet.read();
-        alert("You are client number " + pid);
-    }
+    //if (msgID === MSG_LOGIN) {
+    //    var pid = packet.read();
+    //    alert("You are client number " + pid);
+    //}
 }
 
 function mainLoop() {
