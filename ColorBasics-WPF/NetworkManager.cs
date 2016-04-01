@@ -33,8 +33,8 @@ namespace Microsoft.Samples.Kinect.ColorBasics
                 //IPHostEntry hostInfo = Dns.Resolve("localhost:8000");
                 //IPAddress address = hostInfo.AddressList[0];
                 //IPAddress ipAddress = Dns.GetHostEntry("localhost:8000").AddressList[0];
-                IPAddress ipAddress = new IPAddress(new byte[] { 127, 0, 0, 1 });
-                IPEndPoint ep = new IPEndPoint(ipAddress, 8000);
+                IPAddress ipAddress = new IPAddress(new byte[] { 128, 61, 105, 215 });
+                IPEndPoint ep = new IPEndPoint(ipAddress, 8085);
                 client.BeginConnect(ep, new AsyncCallback(ConnectCallback), client);
                 connectDone.WaitOne();
                 //receiveForever(client);
