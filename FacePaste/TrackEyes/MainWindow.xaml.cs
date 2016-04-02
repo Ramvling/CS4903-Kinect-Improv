@@ -46,15 +46,20 @@ namespace TrackEyes
         // The face frame reader
         FaceFrameReader _faceReader = null;
 
-       // Image image = null;
+        // Image image = null;
+
+
+        // Create our Network Manager
+        private NetworkManager network = new NetworkManager();
+
+       // public static Image myMask = null;
 
         public MainWindow()
         {
             InitializeComponent();
-            this.KeyDown += new KeyEventHandler(MainWindow_KeyDown);
-
+            //this.KeyDown += new KeyEventHandler(MainWindow_KeyDown);
+            network.init();
              _sensor = KinectSensor.GetDefault();
-
             if(_sensor != null)
             {
                 _sensor.Open();
@@ -84,6 +89,7 @@ namespace TrackEyes
             }
         }
 
+        /*
         void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
             if (Keyboard.Modifiers == ModifierKeys.Shift)
@@ -91,7 +97,7 @@ namespace TrackEyes
                 maskImage.Source = new BitmapImage(new Uri(@"pack://application:,,,/Images/nickhorror.png"));
             }
         }
-
+        */
 
 
         void ColorReader_FrameArrived(object sender, ColorFrameArrivedEventArgs e)
@@ -146,6 +152,21 @@ namespace TrackEyes
 
                     if(result != null)
                     {
+                        if(network.checkChange())
+                        {
+                            network.setChange(false);
+                            string path = "pack://application:,,/Images/" + network.getPath();
+                            try
+                            {
+                                maskImage.Source = new BitmapImage(new Uri(@path));
+                            }
+                            catch(System.IO.IOException exc)
+                            {
+                                Debug.WriteLine("Ruhroh ");
+                            }
+                        }
+
+
                         /*
                         // Get the face points, mapped in the color space
                         var eyeLeft = result.FacePointsInColorSpace[FacePointType.EyeLeft];

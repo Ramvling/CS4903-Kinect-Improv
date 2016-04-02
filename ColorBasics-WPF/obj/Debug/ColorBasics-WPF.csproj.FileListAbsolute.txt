@@ -28,3 +28,6 @@ C:\Users\Sarah\Desktop\CS4903-Kinect-Improv\ColorBasics-WPF\bin\AnyCPU\Debug\Col
 C:\Users\Sarah\Desktop\CS4903-Kinect-Improv\ColorBasics-WPF\bin\AnyCPU\Debug\ColorBasics-WPF.pdb
 C:\Users\Sarah\Desktop\CS4903-Kinect-Improv\ColorBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
 C:\Users\Sarah\Desktop\CS4903-Kinect-Improv\ColorBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\Clay\Documents\GitHub\CS4903-Kinect-Improv\ColorBasics-WPF\bin\AnyCPU\Debug\ColorBasics-WPF.exe.config
+C:\Users\Clay\Documents\GitHub\CS4903-Kinect-Improv\ColorBasics-WPF\obj\Debug\ColorBasics-WPF.exe
+C:\Users\Clay\Documents\GitHub\CS4903-Kinect-Improv\ColorBasics-WPF\obj\Debug\ColorBasics-WPF.pdb
