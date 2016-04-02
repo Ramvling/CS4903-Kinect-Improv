@@ -1,0 +1,60 @@
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe.config
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csprojResolveAssemblyReference.cache
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\MainWindow.g.cs
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\App.g.cs
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.cache
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.lref
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\TrackEyes.pdb
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.dll
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.dll
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.xml
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.xml
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\App.baml
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\MainWindow.baml
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.g.resources
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.Properties.Resources.resources
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csproj.GenerateResource.Cache
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.exe
+c:\users\clypi\documents\visual studio 2015\Projects\TrackEyes\TrackEyes\obj\Debug\TrackEyes.pdb
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe.config
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.exe
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.pdb
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.pdb
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.dll
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.dll
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.xml
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.xml
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csprojResolveAssemblyReference.cache
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\MainWindow.g.cs
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\App.g.cs
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.cache
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.lref
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\App.baml
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\MainWindow.baml
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.g.resources
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.Properties.Resources.resources
+C:\Users\clypi\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csproj.GenerateResource.Cache
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe.config
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.exe
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\TrackEyes.pdb
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.dll
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.xml
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\bin\Debug\Microsoft.Kinect.Face.xml
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csprojResolveAssemblyReference.cache
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\MainWindow.g.cs
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\App.g.cs
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.cache
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes_MarkupCompile.lref
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\App.baml
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\MainWindow.baml
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.g.resources
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.Properties.Resources.resources
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.csproj.GenerateResource.Cache
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.exe
+C:\Users\Clay\Dropbox\TrackEyes\TrackEyes\obj\Debug\TrackEyes.pdb
+C:\Users\Clay\Dropbox\FacePaste\TrackEyes\bin\Debug\TrackEyes.exe.config
+C:\Users\Clay\Dropbox\FacePaste\TrackEyes\obj\Debug\TrackEyes.exe
+C:\Users\Clay\Dropbox\FacePaste\TrackEyes\obj\Debug\TrackEyes.pdb
