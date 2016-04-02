@@ -17,6 +17,7 @@ WEBPORT = 8886
 #List of active websocket clients
 clients = []
 pID = 0
+cConnect = None
 
 def setupMessages():
     testOut = createMsgStruct(0, False)
@@ -31,6 +32,7 @@ class WebClient:
         self.pID = pID
 
     def handle(self):
+        global cConnect
         if (self.socket.canHandleMsg() == False):
             return
         packet = self.socket.readPacket()
@@ -41,6 +43,7 @@ class WebClient:
         self.socket.newPacket(0)
         self.socket.write(msg)
         self.socket.send()
+        cConnect.send(msg.encode())
         
     def disconnect(self):
         print("My lost client")
@@ -79,6 +82,8 @@ def serveCSharp():
     print("Listening for c# connection on localhost port 8085")
     sock.listen(1)
     connection, addr = sock.accept()
+    global cConnect
+    cConnect = connection
     print ('C# connection made, spinning up new thread')
     thread = threading.Thread(target = cThread, args=(connection,addr))
     thread.start()
