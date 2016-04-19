@@ -2,6 +2,7 @@ var BUTTON_PRESS = 0;
 
 $(document).ready(function() { 
 	setInterval(mainLoop, 15);
+    init();
 });
 
 

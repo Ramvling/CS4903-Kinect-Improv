@@ -3,6 +3,7 @@
 		<script src="lib/jquery-2.2.2.min.js"></script>
 		<script src = "../PyWebPlug/ws-client.js"></script>
 		<script src = "client.js"></script>
+        <script src = "gui.js"></script>
 	</head>
 	<body>
 		<span id="notify">Press button please:</span>
@@ -11,5 +12,11 @@
                     <input type="text" id ="msg">
                     <button onclick="javascript:sendMsg();">
                 </p>
+
+        <div id = "GameSelect">
+            <button onclick ="javascript:selectHat();">Hat Game</button>
+        </div>
+        <div id = "HatControls">
+        </div>
 	</body>
 </html>
