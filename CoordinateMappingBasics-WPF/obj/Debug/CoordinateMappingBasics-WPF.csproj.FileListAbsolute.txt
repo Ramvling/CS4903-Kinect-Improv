@@ -13,3 +13,6 @@ C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\Microsoft.K
 C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
 C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.exe
 C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.pdb
+C:\Users\Neha\improvProject\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\CoordinateMappingBasics-WPF.exe.config
+C:\Users\Neha\improvProject\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.exe
+C:\Users\Neha\improvProject\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.pdb
