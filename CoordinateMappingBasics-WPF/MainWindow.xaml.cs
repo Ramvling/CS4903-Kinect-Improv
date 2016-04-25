@@ -62,11 +62,14 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
         /// </summary>
         private string statusText = null;
 
+        private NetworkManager network = new NetworkManager();
+
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
         /// </summary>
         public MainWindow()
         {
+            network.init();
             this.kinectSensor = KinectSensor.GetDefault();
 
             this.multiFrameSourceReader = this.kinectSensor.OpenMultiSourceFrameReader(FrameSourceTypes.Depth | FrameSourceTypes.Color | FrameSourceTypes.BodyIndex);
@@ -217,7 +220,23 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
         private void Reader_MultiSourceFrameArrived(object sender, MultiSourceFrameArrivedEventArgs e)
         {
 
-            background.Source = new BitmapImage(new Uri("https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg", UriKind.Absolute));
+            if (network.checkChange())
+            {
+                network.setChange(false);
+                string path = network.getPath();
+                Console.WriteLine("test");
+                Console.WriteLine(path);
+                try
+                {
+                    background.Source = new BitmapImage(new Uri(path, UriKind.Absolute));
+                }
+                catch (System.IO.IOException exc)
+                {
+                    Debug.WriteLine("Ruhroh ");
+                }
+            }
+
+            
             int depthWidth = 0;
             int depthHeight = 0;
                     
