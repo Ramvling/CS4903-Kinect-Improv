@@ -1,0 +1,15 @@
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\CoordinateMappingBasics-WPF.exe.config
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\App.g.cs
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF_MarkupCompile.cache
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.g.resources
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.CoordinateMappingBasics.Properties.Resources.resources
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\CoordinateMappingBasics-WPF.exe
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\CoordinateMappingBasics-WPF.pdb
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.exe
+C:\Users\Neha\Documents\CoordinateMappingBasics-WPF\obj\Debug\CoordinateMappingBasics-WPF.pdb
