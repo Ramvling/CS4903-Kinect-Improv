@@ -224,11 +224,11 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
             {
                 network.setChange(false);
                 string path = network.getPath();
-                Console.WriteLine("test");
                 Console.WriteLine(path);
                 try
                 {
-                    background.Source = new BitmapImage(new Uri(path, UriKind.Absolute));
+                    string path = "pack://application:,,/Images/Background.png";
+                    background.Source = new BitmapImage(new Uri(@path));
                 }
                 catch (System.IO.IOException exc)
                 {
