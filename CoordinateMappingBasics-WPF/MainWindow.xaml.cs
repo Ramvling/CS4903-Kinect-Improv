@@ -16,6 +16,7 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
     using Microsoft.Kinect;
+    using System.Collections;
 
     /// <summary>
     /// Interaction logic for MainWindow
@@ -63,12 +64,19 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
         private string statusText = null;
 
         private NetworkManager network = new NetworkManager();
-
+        private string[] backgrounds;
+        private int counter = 0;
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
         /// </summary>
         public MainWindow()
         {
+            //List all file names
+            backgrounds = new string[] {
+                "Background.png",
+                "Bull.jpg",
+                "eiffle.jpg"
+            };
             network.init();
             this.kinectSensor = KinectSensor.GetDefault();
 
@@ -91,10 +99,10 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
             this.colorMappedToDepthPoints = new DepthSpacePoint[colorWidth * colorHeight];
 
             this.bitmap = new WriteableBitmap(colorWidth, colorHeight, 96.0, 96.0, PixelFormats.Bgra32, null);
-            
+
             // Calculate the WriteableBitmap back buffer size
             this.bitmapBackBufferSize = (uint)((this.bitmap.BackBufferStride * (this.bitmap.PixelHeight - 1)) + (this.bitmap.PixelWidth * this.bytesPerPixel));
-                                   
+
             this.kinectSensor.IsAvailableChanged += this.Sensor_IsAvailableChanged;
 
             this.kinectSensor.Open();
@@ -224,11 +232,13 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
             {
                 network.setChange(false);
                 string path = network.getPath();
-                Console.WriteLine(path);
                 try
                 {
-                    string path = "pack://application:,,/Images/Background.png";
+                    path = "pack://application:,,/Images/" + backgrounds[counter].ToString();
+                    Console.WriteLine(path);
                     background.Source = new BitmapImage(new Uri(@path));
+                    counter += 1;
+                    counter %= backgrounds.Length;
                 }
                 catch (System.IO.IOException exc)
                 {
@@ -236,16 +246,16 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
                 }
             }
 
-            
+
             int depthWidth = 0;
             int depthHeight = 0;
-                    
+
             DepthFrame depthFrame = null;
             ColorFrame colorFrame = null;
             BodyIndexFrame bodyIndexFrame = null;
             bool isBitmapLocked = false;
 
-            MultiSourceFrame multiSourceFrame = e.FrameReference.AcquireFrame();           
+            MultiSourceFrame multiSourceFrame = e.FrameReference.AcquireFrame();
 
             // If the Frame has expired by the time we process this event, return.
             if (multiSourceFrame == null)
@@ -256,7 +266,7 @@ namespace Microsoft.Samples.Kinect.CoordinateMappingBasics
             // We use a try/finally to ensure that we clean up before we exit the function.  
             // This includes calling Dispose on any Frame objects that we may have and unlocking the bitmap back buffer.
             try
-            {                
+            {
                 depthFrame = multiSourceFrame.DepthFrameReference.AcquireFrame();
                 colorFrame = multiSourceFrame.ColorFrameReference.AcquireFrame();
                 bodyIndexFrame = multiSourceFrame.BodyIndexFrameReference.AcquireFrame();
