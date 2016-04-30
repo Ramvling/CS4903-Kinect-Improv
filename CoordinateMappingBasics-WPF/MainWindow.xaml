@@ -4,7 +4,7 @@
         Title="Coordinate Mapping Basics" 
         Height="600" Width="700"
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
-        Closing="MainWindow_Closing">
+        Closing="MainWindow_Closing" WindowStyle="None" WindowState="Maximized">
     <Window.Resources>
         <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e" />
         <SolidColorBrush x:Key="KinectPurpleBrush" Color="#ff52318f" />
